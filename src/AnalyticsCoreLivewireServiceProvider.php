@@ -12,7 +12,6 @@ final class AnalyticsCoreLivewireServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'analytics-core-livewire');
-        Livewire\Livewire::component('analytics-core-livewire-overview', Liberu\Foundation\AnalyticsCoreLivewire\Livewire\Overview::class);
+        Livewire::component('analytics-core-livewire-overview', Liberu\Foundation\AnalyticsCoreLivewire\Livewire\Overview::class);
     }
 }
-
